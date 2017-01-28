@@ -26,7 +26,7 @@ module Jekyll
           redirects = Array.new
           custom_redirects = site.config['custom_redirects'] || Array.new
 
-          site.config['custom_redirects'].each do |conf|
+          custom_redirects.each do |conf|
             puts "config: #{conf}"
           end
 
@@ -36,7 +36,7 @@ module Jekyll
             r
           end
 
-          site.config['custom_redirects'].each do |conf|
+          custom_redirects.each do |conf|
             puts "config: #{conf}"
           end
 
